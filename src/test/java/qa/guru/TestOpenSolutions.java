@@ -15,8 +15,7 @@ public class TestOpenSolutions {
         open("https://github.com/");
         $(".header-menu-wrapper").$(byText("Solutions")).hover();
         $(".border-bottom").$(byText("Enterprise")).click();
-        $(".enterprise-lp").shouldHave(text("The AI-powered\n" +
-                "developer platform."));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" + "developer platform"));
         //sleep(5000);
     }
 }
